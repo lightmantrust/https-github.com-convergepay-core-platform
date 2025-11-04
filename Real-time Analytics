@@ -1,0 +1,10 @@
+GET /analytics/transaction/{transaction_id}
+
+Response:
+{
+  "status": "completed",
+  "ai_optimization_applied": true,
+  "cost_savings": "15.20",
+  "time_savings": "45.2",
+  "risk_assessment": "low"
+}
