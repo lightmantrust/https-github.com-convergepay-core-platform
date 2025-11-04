@@ -1,0 +1,8 @@
+# Start base AI systems
+npm run ai:deploy:base
+
+# Train initial models (requires 2-4 hours)
+npm run ai:train:initial
+
+# Activate production swarms
+npm run ai:activate:production
