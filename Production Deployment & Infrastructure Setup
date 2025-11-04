@@ -1,0 +1,9 @@
+# Clone and setup
+git clone https://github.com/convergepay/core-platform
+cd convergepay-ai/deployment/kubernetes
+
+# Apply Kubernetes configurations
+kubectl apply -f namespace.yaml
+kubectl apply -f storage-class.yaml
+kubectl apply -f postgresql/
+kubectl apply -f redis/
