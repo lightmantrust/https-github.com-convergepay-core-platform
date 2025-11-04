@@ -1,0 +1,34 @@
+{
+  "dashboard": {
+    "title": "ConvergePay AI Performance",
+    "panels": [
+      {
+        "title": "Transaction Success Rate",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "convergepay_transactions_success_rate"
+          }
+        ]
+      },
+      {
+        "title": "AI Prediction Accuracy",
+        "type": "gauge",
+        "targets": [
+          {
+            "expr": "convergepay_ai_prediction_accuracy"
+          }
+        ]
+      },
+      {
+        "title": "Cross-Chain Settlement Times",
+        "type": "heatmap",
+        "targets": [
+          {
+            "expr": "convergepay_settlement_duration_seconds"
+          }
+        ]
+      }
+    ]
+  }
+}
