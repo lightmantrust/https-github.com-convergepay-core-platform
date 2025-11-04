@@ -1,0 +1,10 @@
+GET /liquidity/optimize?source=USD&target=EUR&amount=10000
+
+Response:
+{
+  "optimal_route": "ODL_XRP_BRIDGE",
+  "estimated_cost": "12.50",
+  "estimated_time": "2.5",
+  "success_probability": "0.987",
+  "alternative_routes": [...]
+}
