@@ -1,0 +1,11 @@
+# Deploy AI swarms
+npm run ai:deploy:swarms
+
+# Monitor swarm performance
+npm run ai:monitor:performance
+
+# Update swarm models
+npm run ai:update:models
+
+# Emergency swarm control
+npm run ai:emergency:override
