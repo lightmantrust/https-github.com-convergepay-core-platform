@@ -1,0 +1,19 @@
+# deployment/monitoring/prometheus.yml
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'convergepay-api'
+    static_configs:
+      - targets: ['convergepay-api-service:3000']
+  
+  - job_name: 'ai-swarms'
+    static_configs:
+      - targets: ['ai-swarm-orchestrator:8080']
+  
+  - job_name: 'blockchain-nodes'
+    static_configs:
+      - targets: ['xrpl-node:51234', 'xdc-node:8545']
+
+rule_files:
+  - "alert-rules.yml"
