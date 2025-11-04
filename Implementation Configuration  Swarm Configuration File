@@ -1,0 +1,39 @@
+# config/ai-swarms.yaml
+swarms:
+  liquidity:
+    enabled: true
+    learning_rate: 0.001
+    update_frequency: "5m"
+    emergency_override: true
+    
+  risk:
+    enabled: true
+    compliance_rules:
+      aml_strictness: "high"
+      kyc_requirements: "enhanced"
+    learning_cycles: "continuous"
+    
+  transaction:
+    enabled: true
+    optimization_weights:
+      cost: 0.4
+      speed: 0.3
+      reliability: 0.3
+    fallback_mechanisms: true
+
+learning:
+  reinforcement_learning:
+    enabled: true
+    reward_function: "composite_performance"
+    exploration_rate: 0.1
+    
+monitoring:
+  performance_metrics:
+    - "prediction_accuracy"
+    - "response_time"
+    - "cost_savings"
+    - "error_rate"
+  alert_thresholds:
+    accuracy_below: 0.90
+    response_above: "2s"
+    errors_above: 0.05
