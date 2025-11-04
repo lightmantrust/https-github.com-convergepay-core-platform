@@ -1,0 +1,8 @@
+# Configure XRP Ledger connections
+npm run config:xrpl -- --network=mainnet
+
+# Configure XDC Network
+npm run config:xdc -- --network=mainnet
+
+# Initialize cross-chain bridge
+npm run bridge:init
