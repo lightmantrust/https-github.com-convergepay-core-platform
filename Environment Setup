@@ -1,0 +1,2 @@
+cp .env.example .env
+# Configure your blockchain nodes and API keys
