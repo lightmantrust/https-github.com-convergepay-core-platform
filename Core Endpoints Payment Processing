@@ -1,0 +1,14 @@
+POST /payments/instant-payout
+Content-Type: application/json
+
+{
+  "recipient": "driver_12345",
+  "amount": 150.50,
+  "source_currency": "USD",
+  "target_currency": "MXN",
+  "urgency": "high",
+  "metadata": {
+    "ride_id": "ride_67890",
+    "platform": "ride_hailing"
+  }
+}
