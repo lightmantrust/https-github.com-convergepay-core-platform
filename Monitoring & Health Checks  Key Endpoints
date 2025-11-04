@@ -1,0 +1,8 @@
+# Health check
+curl https://api.convergepay.ai/health
+
+# AI swarm status
+curl https://api.convergepay.ai/ai/status
+
+# Blockchain connectivity
+curl https://api.convergepay.ai/blockchain/status
