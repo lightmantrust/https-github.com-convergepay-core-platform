@@ -1,0 +1,8 @@
+interface SwarmWebhook {
+  event: "swarm.learning_cycle" | "swarm.anomaly_detected";
+  data: {
+    swarm_type: "liquidity" | "risk" | "optimization";
+    performance_metrics: PerformanceMetrics;
+    learning_insights: LearningInsight[];
+  };
+}
