@@ -1,0 +1,10 @@
+interface PaymentWebhook {
+  event: "payment.completed" | "payment.failed" | "payment.optimized";
+  data: {
+    transaction_id: string;
+    amount: number;
+    currency: string;
+    ai_recommendations: AIRecommendation[];
+    timestamp: string;
+  };
+}
