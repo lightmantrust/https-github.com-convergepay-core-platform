@@ -1,0 +1,11 @@
+POST /transactions/cross-chain
+Content-Type: application/json
+
+{
+  "source_chain": "XRPL",
+  "target_chain": "XDC",
+  "source_asset": "XRP",
+  "target_asset": "XDC",
+  "amount": "1000",
+  "slippage_tolerance": "0.5"
+}
