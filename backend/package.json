@@ -1,0 +1,43 @@
+
+---
+
+## 🔧 backend/package.json
+
+```json
+{
+  "name": "convergepay-backend",
+  "version": "1.0.0",
+  "description": "ConvergePay AI Backend Services",
+  "scripts": {
+    "dev": "nodemon src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "test": "jest",
+    "test:integration": "jest --config jest.integration.config.js",
+    "setup:production": "npm run build && npm run db:migrate && npm run ai:train:initial",
+    "db:migrate": "knex migrate:latest",
+    "ai:train:initial": "ts-node src/ai-swarm/training/initial-training.ts",
+    "ai:deploy:swarms": "ts-node src/ai-swarm/deployment/deploy-swarms.ts",
+    "blockchain:init": "ts-node src/blockchain/initialization/init-chains.ts"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "xrpl": "^2.0.0",
+    "xdc.js": "^1.0.0",
+    "tensorflow": "^4.0.0",
+    "axios": "^1.0.0",
+    "redis": "^4.0.0",
+    "pg": "^8.0.0",
+    "socket.io": "^4.0.0",
+    "joi": "^17.0.0",
+    "helmet": "^6.0.0",
+    "cors": "^2.8.0",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "nodemon": "^2.0.0",
+    "jest": "^28.0.0",
+    "ts-node": "^10.0.0"
+  }
+}
