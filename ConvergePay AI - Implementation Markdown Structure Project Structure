@@ -1,0 +1,32 @@
+convergepay-ai/
+├── 📄 README.md
+├── 📄 DEPLOYMENT.md
+├── 📄 API_REFERENCE.md
+├── 📄 AI_SWARMS_SPEC.md
+├── 🔧 backend/
+│   ├── 📄 package.json
+│   ├── 📄 docker-compose.yml
+│   ├── 📁 src/
+│   │   ├── 📄 app.ts
+│   │   ├── 📁 core/
+│   │   ├── 📁 blockchain/
+│   │   ├── 📁 ai-swarm/
+│   │   ├── 📁 api/
+│   │   └── 📁 config/
+│   └── 📁 tests/
+├── 🎨 frontend/
+│   ├── 📄 package.json
+│   ├── 📁 src/
+│   │   ├── 📄 App.tsx
+│   │   ├── 📁 components/
+│   │   ├── 📁 views/
+│   │   └── 📁 hooks/
+│   └── 📁 public/
+├── 🔐 smart-contracts/
+│   ├── 📁 xrpl/
+│   ├── 📁 xdc/
+│   └── 📁 cross-chain/
+└── 🚀 deployment/
+    ├── 📁 kubernetes/
+    ├── 📁 docker/
+    └── 📁 monitoring/
